@@ -695,7 +695,8 @@ const nextImageExportOptimizer = async function () {
     imageFolderPath,
     exportFolderName
   );
-  optimizedImagesFolders.push(`public/${exportFolderName}`);
+  // Do not add this random folder
+  // optimizedImagesFolders.push(`public/${exportFolderName}`);
 
   function findImageFiles(folderPath, extensions, results = []) {
     const items = fs.readdirSync(folderPath);
